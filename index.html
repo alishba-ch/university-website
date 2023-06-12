@@ -12,13 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-link">
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -28,6 +31,7 @@
 
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -41,6 +45,46 @@
         </div>
     </section>
 
+    <!------ Course ------>
+
+    <section class="course">
+        <h1>Course We Offer </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae maxime, impedit
+                    alias reiciendis delectus similique ex explicabo in tenetur iure totam hic porro, dolorum nisi nulla
+                    id quo. Tempora.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae maxime, impedit
+                    alias reiciendis delectus similique ex explicabo in tenetur iure totam hic porro, dolorum nisi nulla
+                    id quo. Tempora.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae maxime, impedit
+                    alias reiciendis delectus similique ex explicabo in tenetur iure totam hic porro, dolorum nisi nulla
+                    id quo. Tempora.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+        var navLink = document.getElementById("navLink");
+
+        function showMenu() {
+            navLink.style.right = "0";
+        }
+        function hideMenu() {
+            navLink.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
