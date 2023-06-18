@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
 }
 .header {
@@ -83,7 +82,7 @@ nav img {
   transition: 1s;
 }
 
-nav .fa {
+nav .bi {
   display: none;
 }
 @media (max-width: 700px) {
@@ -104,15 +103,15 @@ nav .fa {
     z-index: 2;
     transition: 1s;
   }
-  nav .fa {
+  nav .bi {
     display: block;
     color: #fff;
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
   }
-  .nav link ul {
-    padding-left: 40px;
+  .nav-link ul {
+    padding-left: 30px;
   }
 }
 
@@ -270,7 +269,9 @@ h3 {
   margin-top: 15px;
   text-align: left;
 }
-
+.testimonials-col bi {
+  color: #f44336;
+}
 /*----- call to action -----*/
 
 .cta {
@@ -306,4 +307,7 @@ h3 {
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
+}
+.icons .bi {
+  color: #e62b2b;
 }
