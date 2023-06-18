@@ -269,7 +269,13 @@ h3 {
   margin-top: 15px;
   text-align: left;
 }
-.testimonials-col bi {
+@media (max-width: 700px) {
+  .testimonials-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+.icons-bi {
   color: #f44336;
 }
 /*----- call to action -----*/
@@ -308,6 +314,6 @@ h3 {
   margin-top: 20px;
   font-weight: 600;
 }
-.icons .bi {
-  color: #e62b2b;
+.bi-icons {
+  color: #f44336;
 }
