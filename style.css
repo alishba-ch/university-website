@@ -317,3 +317,8 @@ h3 {
 .bi-icons {
   color: #f44336;
 }
+.Footer {
+  text-align: center;
+  font-size: medium;
+  padding: 30px;
+}
